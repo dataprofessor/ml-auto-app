@@ -163,10 +163,11 @@ else:
         #st.write(df.head(5))
 
         # Boston housing dataset
-        # boston = load_boston()
-        boston = load_boston().loc[:50]
-        X = pd.DataFrame(boston.data, columns=boston.feature_names)
-        Y = pd.Series(boston.target, name='response')
+        boston = load_boston()
+        #X = pd.DataFrame(boston.data, columns=boston.feature_names)
+        #Y = pd.Series(boston.target, name='response')
+        X = pd.DataFrame(boston.data, columns=boston.feature_names).loc[:50] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+        Y = pd.Series(boston.target, name='response').loc[:50] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
         df = pd.concat( [X,Y], axis=1 )
 
         st.markdown('The Boston housing dataset is used as the example.')
