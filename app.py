@@ -17,7 +17,7 @@ st.set_page_config(page_title='The Machine Learning Algorithm Comparison App',
 #---------------------------------#
 # Model building
 def build_model(df):
-    df = df.loc[:50] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+    df = df.loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
     X = df.iloc[:,:-1] # Using all column except for the last column as X
     Y = df.iloc[:,-1] # Selecting the last column as Y
 
@@ -166,8 +166,8 @@ else:
         boston = load_boston()
         #X = pd.DataFrame(boston.data, columns=boston.feature_names)
         #Y = pd.Series(boston.target, name='response')
-        X = pd.DataFrame(boston.data, columns=boston.feature_names).loc[:50] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
-        Y = pd.Series(boston.target, name='response').loc[:50] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+        X = pd.DataFrame(boston.data, columns=boston.feature_names).loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+        Y = pd.Series(boston.target, name='response').loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
         df = pd.concat( [X,Y], axis=1 )
 
         st.markdown('The Boston housing dataset is used as the example.')
