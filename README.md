@@ -1,5 +1,9 @@
 # ml-auto-app
 
+[How to Build Your Own AutoML App | Streamlit #17](https://youtu.be/ApxEBGbqTyQ)
+
+<a href="https://youtu.be/ApxEBGbqTyQ"><img src="http://img.youtube.com/vi/ApxEBGbqTyQ/0.jpg" alt="How to Build Your Own AutoML App | Streamlit #17" title="How to Build Your Own AutoML App | Streamlit #17" width="400" /></a>
+
 # Demo
 
 Launch the web app:
